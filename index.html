@@ -19,8 +19,8 @@
 <style>
 :root {
     --bg:#061522;
-    --surface:rgba(14,37,57,.91);
-    --surface-light:rgba(29,64,88,.95);
+    --surface:rgba(14,37,57,.96);
+    --surface-light:rgba(29,64,88,.97);
     --ice:#a5e9ff;
     --ice-light:#e1f7ff;
     --blue:#4a9cc9;
@@ -67,17 +67,10 @@ button {font-family:inherit;cursor:pointer}
     vertical-align:middle;
 }
 
-.icon-small {
-    width:16px;
-    height:16px;
-}
+.icon-small {width:16px;height:16px}
+.icon-large {width:30px;height:30px}
 
-.icon-large {
-    width:30px;
-    height:30px;
-}
-
-/* SNOW EFFECT */
+/* SNOW EFFECT - OPTIMIZED */
 
 .snow {
     position:fixed;
@@ -90,13 +83,12 @@ button {font-family:inherit;cursor:pointer}
 .snowflake {
     position:absolute;
     top:-20px;
-    width:5px;
-    height:5px;
+    width:4px;
+    height:4px;
     border-radius:50%;
     background:#fff;
     opacity:.7;
-    box-shadow:0 0 8px #a5e9ff;
-    animation:fall linear infinite;
+    animation:fall 10s linear forwards;
 }
 
 @keyframes fall {
@@ -109,14 +101,12 @@ button {font-family:inherit;cursor:pointer}
 /* HEADER */
 
 header {
-    background:rgba(5,19,34,.93);
+    background:rgba(5,19,34,.97);
     border-bottom:1px solid var(--border);
     position:sticky;
     top:0;
     z-index:100;
-    backdrop-filter:blur(16px);
-    -webkit-backdrop-filter:blur(16px);
-    box-shadow:0 5px 30px rgba(0,0,0,.25);
+    box-shadow:0 3px 12px rgba(0,0,0,.18);
 }
 
 .navbar {
@@ -149,7 +139,7 @@ header {
 
 .brand-name {
     color:var(--ice);
-    text-shadow:0 0 18px rgba(165,233,255,.4);
+    text-shadow:0 0 12px rgba(165,233,255,.3);
     letter-spacing:.5px;
 }
 
@@ -167,7 +157,6 @@ header {
     padding:9px 12px;
     border-radius:10px;
     font-size:13px;
-    transition:.2s;
     white-space:nowrap;
 }
 
@@ -175,7 +164,6 @@ header {
 .nav-links button.active {
     background:rgba(165,233,255,.12);
     color:var(--ice);
-    box-shadow:inset 0 0 15px rgba(165,233,255,.05);
 }
 
 /* PAGES */
@@ -183,7 +171,7 @@ header {
 .page {display:none;min-height:65vh}
 .page.active {display:block}
 
-/* HERO - WINTER FOOTBALL STADIUM */
+/* HERO */
 
 .hero {
     min-height:590px;
@@ -196,7 +184,7 @@ header {
     linear-gradient(90deg,rgba(3,15,29,.28),rgba(3,15,29,.82)),
     linear-gradient(0deg,#061522 0%,transparent 38%),
     linear-gradient(180deg,rgba(145,207,235,.12),transparent 40%),
-    url("https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=2000&q=95")
+    url("https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1400&q=78")
     center 48%/cover no-repeat;
 }
 
@@ -215,19 +203,13 @@ header {
     position:absolute;
     inset:0;
     pointer-events:none;
-    opacity:.32;
+    opacity:.17;
     background-image:
     radial-gradient(circle,white 1px,transparent 2px),
     radial-gradient(circle,white 1px,transparent 2px),
     radial-gradient(circle,white 1.5px,transparent 2px);
     background-size:110px 110px,170px 170px,230px 230px;
     background-position:10px 20px,70px 40px,120px 90px;
-    animation:heroSnow 15s linear infinite;
-}
-
-@keyframes heroSnow {
-    from {background-position:10px 20px,70px 40px,120px 90px}
-    to {background-position:80px 300px,10px 350px,200px 250px}
 }
 
 .hero-content {
@@ -243,14 +225,13 @@ header {
     gap:8px;
     padding:8px 16px;
     border:1px solid rgba(165,233,255,.4);
-    background:rgba(7,28,46,.65);
+    background:rgba(7,28,46,.88);
     color:var(--ice);
     border-radius:50px;
     font-size:13px;
     font-weight:700;
     margin-bottom:22px;
-    box-shadow:0 0 20px rgba(165,233,255,.08);
-    backdrop-filter:blur(8px);
+    box-shadow:0 0 12px rgba(165,233,255,.06);
 }
 
 .hero h1 {
@@ -263,7 +244,7 @@ header {
 
 .hero h1 span {
     color:var(--ice);
-    text-shadow:0 0 25px rgba(165,233,255,.3);
+    text-shadow:0 0 18px rgba(165,233,255,.25);
 }
 
 .hero p {
@@ -292,27 +273,25 @@ header {
     border-radius:12px;
     font-size:14px;
     font-weight:800;
-    transition:.2s;
 }
 
-.btn:hover {transform:translateY(-3px)}
+.btn:hover {filter:brightness(1.05)}
 
 .btn-primary {
     background:linear-gradient(135deg,#e0f7ff,#78c9ee,#4a9cc9);
     border:1px solid rgba(255,255,255,.4);
     color:#071827;
-    box-shadow:0 5px 20px rgba(92,194,238,.2);
+    box-shadow:0 3px 12px rgba(92,194,238,.15);
 }
 
 .btn-primary:hover {
-    box-shadow:0 8px 28px rgba(92,194,238,.4);
+    box-shadow:0 4px 15px rgba(92,194,238,.25);
 }
 
 .btn-secondary {
-    background:rgba(7,28,46,.65);
+    background:rgba(7,28,46,.88);
     border:1px solid var(--border);
     color:white;
-    backdrop-filter:blur(8px);
 }
 
 /* SECTIONS */
@@ -345,19 +324,17 @@ section {padding:65px 0}
     letter-spacing:1px;
 }
 
-/* GLASS CARDS */
+/* CARDS */
 
 .card,
 .featured-match,
 .roster-card,
 .lineup-wrapper,
 .about-box {
-    background:linear-gradient(145deg,rgba(24,55,78,.82),rgba(8,27,45,.94));
+    background:linear-gradient(145deg,rgba(24,55,78,.95),rgba(8,27,45,.98));
     border:1px solid var(--border);
     border-radius:20px;
-    box-shadow:0 10px 35px rgba(0,0,0,.2),inset 0 1px 0 rgba(255,255,255,.05);
-    backdrop-filter:blur(12px);
-    -webkit-backdrop-filter:blur(12px);
+    box-shadow:0 5px 16px rgba(0,0,0,.16);
 }
 
 .cards-grid {
@@ -368,13 +345,10 @@ section {padding:65px 0}
 
 .card {
     padding:23px;
-    transition:.25s;
 }
 
 .card:hover {
-    transform:translateY(-5px);
-    border-color:rgba(165,233,255,.55);
-    box-shadow:0 12px 35px rgba(67,157,204,.13);
+    border-color:rgba(165,233,255,.45);
 }
 
 .card-icon {
@@ -387,7 +361,6 @@ section {padding:65px 0}
     color:var(--ice);
     margin-bottom:17px;
     border:1px solid var(--border);
-    box-shadow:0 5px 18px rgba(0,0,0,.13);
 }
 
 .card-icon .icon {
@@ -486,7 +459,6 @@ section {padding:65px 0}
     display:grid;
     place-items:center;
     color:var(--ice);
-    box-shadow:0 0 20px rgba(165,233,255,.08);
 }
 
 .team-badge .icon {
@@ -637,7 +609,6 @@ section {padding:65px 0}
     color:#071827;
     font-size:14px;
     font-weight:900;
-    box-shadow:0 0 12px rgba(165,233,255,.25);
 }
 
 .player-marker.goalkeeper .player-number {
@@ -730,7 +701,6 @@ section {padding:65px 0}
     background:var(--ice);
     margin-left:9px;
     vertical-align:middle;
-    box-shadow:0 0 8px rgba(165,233,255,.5);
 }
 
 /* ABOUT */
@@ -756,7 +726,7 @@ section {padding:65px 0}
     border-radius:18px;
     background:
     linear-gradient(0deg,rgba(7,12,20,.7),rgba(7,12,20,.05)),
-    url("https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=1000&q=85") center/cover no-repeat;
+    url("https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=800&q=75") center/cover no-repeat;
     display:flex;
     align-items:end;
     padding:20px;
@@ -782,7 +752,7 @@ footer {
     padding:28px 0;
     color:var(--muted);
     font-size:13px;
-    background:rgba(4,17,31,.85);
+    background:rgba(4,17,31,.95);
 }
 
 .footer-content {
@@ -847,6 +817,16 @@ footer {
     .roster-list {grid-template-columns:1fr}
     .brand {font-size:17px}
     .nav-links button {font-size:11px;padding:7px 8px}
+}
+
+/* REDUCED MOTION */
+
+@media(prefers-reduced-motion:reduce) {
+    html {scroll-behavior:auto}
+    *,*::before,*::after {
+        animation-duration:.01ms !important;
+        animation-iteration-count:1 !important;
+    }
 }
 </style>
 </head>
@@ -1324,24 +1304,62 @@ const trainings = [];
 const tournaments = [];
 
 
-/* SNOW GENERATOR */
+/* SNOW GENERATOR - 6 FLAKES EVERY 20 SECONDS */
 
 function createSnow() {
+
     const snow = document.getElementById("snow");
 
-    for (let i = 0; i < 45; i++) {
+    if (!snow) return;
+
+    function createFlake() {
+
         const flake = document.createElement("span");
 
         flake.className = "snowflake";
 
         flake.style.left = Math.random() * 100 + "%";
-        flake.style.width = (3 + Math.random() * 5) + "px";
-        flake.style.height = flake.style.width;
-        flake.style.animationDuration = (8 + Math.random() * 15) + "s";
-        flake.style.animationDelay = (-Math.random() * 20) + "s";
+
+        const size = 2 + Math.random() * 3;
+
+        flake.style.width = size + "px";
+        flake.style.height = size + "px";
+
+        flake.style.animationDuration = "10s";
 
         snow.appendChild(flake);
+
+        setTimeout(function() {
+            flake.remove();
+        }, 10000);
+
     }
+
+    function startSnowCycle() {
+
+        let count = 0;
+
+        createFlake();
+        count++;
+
+        const interval = setInterval(function() {
+
+            createFlake();
+
+            count++;
+
+            if (count >= 6) {
+                clearInterval(interval);
+            }
+
+        }, 3000);
+
+    }
+
+    startSnowCycle();
+
+    setInterval(startSnowCycle, 20000);
+
 }
 
 
@@ -1374,7 +1392,7 @@ function goTo(pageId, button) {
 
     window.scrollTo({
         top:0,
-        behavior:"smooth"
+        behavior:"auto"
     });
 
     if (history.replaceState) {
@@ -1687,7 +1705,7 @@ initializeApp();
 </script>
 
 
-<!-- SERVICE WORKER -->
+<!-- SERVICE WORKER - UNCHANGED -->
 
 <script>
 
