@@ -1,20 +1,13 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE html><html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#ffffff">
-
 <title>CA SED RAHAL | White & Gold</title>
-
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon-192.png">
-
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-<script src="https://unpkg.com/lucide@latest"></script>
-
-<style>
+<script src="https://unpkg.com/lucide@latest"></script><style>
 :root{
 --gold:#c69b3c;
 --dark:#987022;
@@ -26,132 +19,51 @@
 --shadow:0 8px 25px rgba(0,0,0,.045);
 }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
--webkit-tap-highlight-color:transparent;
-}
-
-body{
-font-family:'Cairo',sans-serif;
-background:var(--bg);
-color:var(--text);
-}
-
-button{
-font-family:inherit;
-cursor:pointer;
-border:0;
-}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text)}
+button{font-family:inherit;cursor:pointer;border:0}
 
 header{
-height:72px;
-background:#fff;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:0 17px;
+height:72px;background:white;display:flex;align-items:center;
+justify-content:space-between;padding:0 17px;
 border-bottom:1px solid var(--border);
-position:sticky;
-top:0;
-z-index:100;
+position:sticky;top:0;z-index:100
 }
 
-.brand{
-display:flex;
-align-items:center;
-gap:11px;
-}
-
+.brand{display:flex;align-items:center;gap:11px}
 .logo{
-width:45px;
-height:45px;
+width:45px;height:45px;
 background:linear-gradient(145deg,#e6c778,#b68b35);
-border-radius:14px;
-display:grid;
-place-items:center;
-color:white;
+border-radius:14px;display:grid;place-items:center;color:white
 }
-
-.logo svg{
-width:25px;
-height:25px;
-}
-
-.brand h1{
-font-size:15px;
-font-weight:900;
-}
-
-.brand small{
-display:block;
-color:var(--dark);
-font-size:9px;
-font-weight:800;
-letter-spacing:1px;
-}
+.logo svg{width:25px;height:25px}
+.brand h1{font-size:15px;font-weight:900}
+.brand small{display:block;color:var(--dark);font-size:9px;font-weight:800;letter-spacing:1px}
 
 .header-badge{
-background:var(--light);
-color:var(--dark);
-padding:7px 11px;
-border-radius:30px;
-font-size:10px;
-font-weight:900;
+background:var(--light);color:var(--dark);
+padding:7px 11px;border-radius:30px;font-size:10px;font-weight:900
 }
 
 nav{
-display:flex;
-gap:7px;
-padding:12px;
-background:white;
-overflow-x:auto;
-position:sticky;
-top:72px;
-z-index:90;
-border-bottom:1px solid var(--border);
-scrollbar-width:none;
+display:flex;gap:7px;padding:12px;background:white;
+overflow-x:auto;position:sticky;top:72px;z-index:90;
+border-bottom:1px solid var(--border);scrollbar-width:none
 }
-
 nav::-webkit-scrollbar{display:none}
-
 nav button{
-flex-shrink:0;
-display:flex;
-align-items:center;
-gap:6px;
-padding:10px 14px;
-border-radius:12px;
-background:#f8f7f3;
-color:#777;
-font-size:11px;
-font-weight:800;
-transition:.2s;
+flex-shrink:0;display:flex;align-items:center;gap:6px;
+padding:10px 14px;border-radius:12px;background:#f8f7f3;
+color:#777;font-size:11px;font-weight:800;transition:.2s
 }
-
-nav button svg{
-width:16px;
-height:16px;
-}
-
+nav button svg{width:16px;height:16px}
 nav button.active{
 background:linear-gradient(135deg,#d9b765,#b88c36);
-color:white;
+color:white
 }
 
-main{
-max-width:850px;
-margin:auto;
-padding:17px;
-padding-bottom:45px;
-}
-
-.page{
-display:none;
-animation:appear .3s ease;
-}
-
+main{max-width:850px;margin:auto;padding:17px;padding-bottom:45px}
+.page{display:none;animation:appear .3s ease}
 .page.active{display:block}
 
 @keyframes appear{
@@ -160,447 +72,178 @@ to{opacity:1;transform:translateY(0)}
 }
 
 .hero{
-min-height:250px;
-border-radius:24px;
-background:
-linear-gradient(90deg,rgba(0,0,0,.8),rgba(0,0,0,.25)),
+min-height:250px;border-radius:24px;
+background:linear-gradient(90deg,rgba(0,0,0,.8),rgba(0,0,0,.25)),
 url("https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=80") center/cover;
-display:flex;
-align-items:center;
-padding:25px;
-color:white;
+display:flex;align-items:center;padding:25px;color:white
 }
-
 .hero-content{max-width:350px}
-
 .hero-label{
-background:var(--gold);
-padding:6px 12px;
-border-radius:30px;
-font-size:10px;
-font-weight:900;
-display:inline-block;
-margin-bottom:14px;
+background:var(--gold);padding:6px 12px;border-radius:30px;
+font-size:10px;font-weight:900;display:inline-block;margin-bottom:14px
 }
-
-.hero h2{
-font-size:29px;
-font-weight:900;
-line-height:1.5;
-}
-
-.hero p{
-font-size:11px;
-color:#ddd;
-margin-top:9px;
-}
+.hero h2{font-size:29px;font-weight:900;line-height:1.5}
+.hero p{font-size:11px;color:#ddd;margin-top:9px}
 
 .section-title{
-display:flex;
-justify-content:space-between;
-align-items:center;
-margin:25px 2px 13px;
+display:flex;justify-content:space-between;align-items:center;
+margin:25px 2px 13px
 }
-
-.section-title h2{
-font-size:16px;
-font-weight:900;
-}
-
-.section-title span{
-font-size:10px;
-color:var(--dark);
-font-weight:800;
-}
+.section-title h2{font-size:16px;font-weight:900}
+.section-title span{font-size:10px;color:var(--dark);font-weight:800}
 
 .card{
-background:white;
-border:1px solid var(--border);
-border-radius:19px;
-padding:17px;
-margin-bottom:14px;
-box-shadow:var(--shadow);
+background:white;border:1px solid var(--border);
+border-radius:19px;padding:17px;margin-bottom:14px;
+box-shadow:var(--shadow)
 }
-
 .card-title{
-display:flex;
-align-items:center;
-gap:9px;
-font-size:14px;
-font-weight:900;
-margin-bottom:14px;
+display:flex;align-items:center;gap:9px;
+font-size:14px;font-weight:900;margin-bottom:14px
 }
+.card-title svg{color:var(--gold);width:20px}
 
-.card-title svg{
-color:var(--gold);
-width:20px;
-}
-
-.stats-grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:10px;
-}
-
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 .stat-box{
-background:white;
-border:1px solid var(--border);
-padding:15px;
-border-radius:17px;
+background:white;border:1px solid var(--border);
+padding:15px;border-radius:17px
 }
-
-.stat-box svg{
-width:23px;
-height:23px;
-color:var(--gold);
-margin-bottom:8px;
-}
-
-.stat-box strong{
-display:block;
-font-size:21px;
-color:var(--dark);
-font-weight:900;
-}
-
-.stat-box small{
-font-size:10px;
-color:var(--muted);
-font-weight:700;
-}
+.stat-box svg{width:23px;height:23px;color:var(--gold);margin-bottom:8px}
+.stat-box strong{display:block;font-size:21px;color:var(--dark);font-weight:900}
+.stat-box small{font-size:10px;color:var(--muted);font-weight:700}
 
 .gold-button{
 background:linear-gradient(135deg,#d9b765,#ae812b);
-color:white;
-padding:11px 17px;
-border-radius:11px;
-font-size:11px;
-font-weight:900;
+color:white;padding:11px 17px;border-radius:11px;
+font-size:11px;font-weight:900
 }
-
 .outline-button{
-background:white;
-border:1px solid #dfc98e;
-color:var(--dark);
-padding:10px 15px;
-border-radius:11px;
-font-size:11px;
-font-weight:900;
-}
-
-.match-card{
-background:linear-gradient(145deg,#fff,#fcf8ef);
-border:1px solid #eadbb8;
-border-radius:22px;
-padding:20px 14px;
-text-align:center;
-}
-
-.match-status{
-display:inline-block;
-background:var(--light);
-color:var(--dark);
-padding:6px 13px;
-border-radius:30px;
-font-size:10px;
-font-weight:900;
-margin-bottom:18px;
-}
-
-.teams{
-display:flex;
-align-items:center;
-justify-content:space-around;
-gap:10px;
-}
-
-.team{
-flex:1;
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:9px;
-}
-
-.team-logo{
-width:65px;
-height:65px;
-border-radius:19px;
-background:var(--light);
-display:grid;
-place-items:center;
-color:var(--dark);
-}
-
-.team-logo svg{
-width:29px;
-height:29px;
-}
-
-.team strong{
-font-size:12px;
-font-weight:900;
-}
-
-.vs{
-font-size:17px;
-font-weight:900;
-color:var(--dark);
-}
-
-.match-info{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:12px;
-border-top:1px solid var(--border);
-margin-top:18px;
-padding-top:14px;
-font-size:10px;
-color:#666;
-}
-
-.match-info span{
-display:flex;
-align-items:center;
-gap:5px;
-}
-
-.match-info svg{
-width:14px;
-height:14px;
-color:var(--gold);
+background:white;border:1px solid #dfc98e;color:var(--dark);
+padding:10px 15px;border-radius:11px;font-size:11px;font-weight:900
 }
 
 .player-row{
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:10px;
-padding:12px 0;
-border-bottom:1px solid #f1eee7;
+display:flex;align-items:center;justify-content:space-between;
+gap:10px;padding:12px 0;border-bottom:1px solid #f1eee7
 }
-
 .player-row:last-child{border:0}
-
-.player-info{
-display:flex;
-align-items:center;
-gap:10px;
-}
-
+.player-info{display:flex;align-items:center;gap:10px}
 .player-avatar{
-width:39px;
-height:39px;
-border-radius:13px;
-background:var(--light);
-display:grid;
-place-items:center;
-color:var(--dark);
+width:39px;height:39px;border-radius:13px;
+background:var(--light);display:grid;place-items:center;color:var(--dark)
 }
-
-.player-avatar svg{
-width:20px;
-height:20px;
-}
-
-.player-info strong{
-font-size:11px;
-font-weight:900;
-}
-
-.player-info small{
-display:block;
-font-size:9px;
-color:#999;
-}
-
+.player-avatar svg{width:20px;height:20px}
+.player-info strong{font-size:11px;font-weight:900}
+.player-info small{display:block;font-size:9px;color:#999}
 .rating{
-background:var(--light);
-color:var(--dark);
-padding:6px 10px;
-border-radius:9px;
-font-size:11px;
-font-weight:900;
+background:var(--light);color:var(--dark);
+padding:6px 10px;border-radius:9px;font-size:11px;font-weight:900
 }
 
-.category{
-color:var(--dark);
-font-size:12px;
-font-weight:900;
-margin:17px 0 8px;
-}
+.category{color:var(--dark);font-size:12px;font-weight:900;margin:17px 0 8px}
 
-.empty-state{
-text-align:center;
-padding:35px 12px;
-color:#999;
-}
-
-.empty-state svg{
-width:42px;
-height:42px;
-color:var(--gold);
-margin-bottom:12px;
-}
-
-.empty-state strong{
-display:block;
-color:#555;
-font-size:12px;
-}
-
-.empty-state p{
-font-size:10px;
-margin-top:6px;
-}
+.empty-state{text-align:center;padding:35px 12px;color:#999}
+.empty-state svg{width:42px;height:42px;color:var(--gold);margin-bottom:12px}
+.empty-state strong{display:block;color:#555;font-size:12px}
+.empty-state p{font-size:10px;margin-top:6px}
 
 .result-card{
-background:white;
-border:1px solid var(--border);
-border-radius:18px;
-padding:17px;
-margin-bottom:13px;
+background:white;border:1px solid var(--border);
+border-radius:18px;padding:17px;margin-bottom:13px
 }
-
 .result-head{
-display:flex;
-justify-content:space-between;
-font-size:10px;
-color:#999;
-margin-bottom:15px;
+display:flex;justify-content:space-between;
+font-size:10px;color:#999;margin-bottom:15px
 }
-
 .result-score{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:12px;
-font-size:12px;
-font-weight:900;
-text-align:center;
+display:flex;align-items:center;justify-content:center;
+gap:12px;font-size:12px;font-weight:900;text-align:center
+}
+.score{font-size:26px;color:var(--dark)}
+
+.sub-heading{
+display:flex;align-items:center;gap:9px;
+color:var(--dark);font-size:12px;font-weight:900;
+margin:16px 0 8px;padding-top:14px;
+border-top:1px solid var(--border)
+}
+.sub-heading svg{width:19px;height:19px;color:var(--gold)}
+
+.goal-row{
+display:flex;justify-content:space-between;
+align-items:center;font-size:11px;font-weight:800;
+padding:9px 3px;border-bottom:1px solid #f3efe6
+}
+.goal-icons{display:flex;align-items:center;gap:5px;color:var(--gold)}
+.goal-icons svg{
+width:17px;height:17px;stroke-width:2.5;
+fill:#f8f0dc
 }
 
-.score{
-font-size:26px;
-color:var(--dark);
+.motm{
+display:flex;align-items:center;gap:12px;
+background:linear-gradient(135deg,#fffaf0,#f8f0dc);
+border:1px solid #eadbb8;border-radius:15px;
+padding:14px;margin-top:15px
 }
-
-.scorers{
-border-top:1px solid var(--border);
-margin-top:14px;
-padding-top:12px;
-font-size:11px;
-line-height:2.1;
-color:#666;
-}
+.motm svg{width:27px;height:27px;color:var(--gold);stroke-width:2.2}
+.motm small{display:block;font-size:9px;color:#999}
+.motm strong{font-size:12px;font-weight:900;color:var(--dark)}
 
 .lineup-group{margin-bottom:17px}
-
-.lineup-heading{
-color:var(--dark);
-font-size:11px;
-font-weight:900;
-margin-bottom:9px;
-}
-
-.lineup-list{
-display:flex;
-flex-wrap:wrap;
-gap:8px;
-}
-
+.lineup-heading{color:var(--dark);font-size:11px;font-weight:900;margin-bottom:9px}
+.lineup-list{display:flex;flex-wrap:wrap;gap:8px}
 .lineup-player{
-background:#faf8f3;
-border:1px solid var(--border);
-padding:8px 11px;
-border-radius:10px;
-font-size:10px;
-font-weight:800;
+background:#faf8f3;border:1px solid var(--border);
+padding:8px 11px;border-radius:10px;font-size:10px;font-weight:800
 }
 
 .pitch{
 background:linear-gradient(145deg,#f4f7ed,#e9efdd);
-border:2px solid #d9e4c9;
-border-radius:18px;
-padding:18px 9px;
-position:relative;
-overflow:hidden;
+border:2px solid #d9e4c9;border-radius:18px;
+padding:18px 9px;position:relative;overflow:hidden
 }
-
 .pitch:before{
-content:"";
-position:absolute;
-left:50%;
-top:0;
-bottom:0;
-border-left:1px dashed #a7b895;
+content:"";position:absolute;left:50%;top:0;bottom:0;
+border-left:1px dashed #a7b895
 }
-
 .pitch-line{
-position:relative;
-z-index:1;
-display:flex;
-justify-content:space-around;
-gap:4px;
-margin:13px 0;
+position:relative;z-index:1;display:flex;
+justify-content:space-around;gap:4px;margin:13px 0
 }
-
 .pitch-player{
-background:white;
-border:1px solid #e1d4b4;
-border-radius:10px;
-padding:8px 6px;
-text-align:center;
-font-size:9px;
-font-weight:900;
+background:white;border:1px solid #e1d4b4;
+border-radius:10px;padding:8px 6px;text-align:center;
+font-size:9px;font-weight:900
 }
-
 .pitch-player svg{
-display:block;
-margin:0 auto 5px;
-width:18px;
-height:18px;
-color:var(--dark);
+display:block;margin:0 auto 5px;
+width:18px;height:18px;color:var(--dark)
 }
 
 .about-image{
-height:180px;
-border-radius:16px;
+height:180px;border-radius:16px;
 background:url("https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=800&q=75") center/cover;
-margin-bottom:15px;
+margin-bottom:15px
 }
+.about-text{font-size:11px;line-height:2.2;color:#666}
 
-.about-text{
-font-size:11px;
-line-height:2.2;
-color:#666;
-}
-
-footer{
-text-align:center;
-color:#aaa;
-padding:20px;
-font-size:10px;
-}
-
+footer{text-align:center;color:#aaa;padding:20px;font-size:10px}
 footer strong{color:var(--dark)}
 
 @media(min-width:650px){
 .stats-grid{grid-template-columns:repeat(4,1fr)}
 .hero{min-height:280px}
 }
-
 @media(max-width:380px){
 .hero h2{font-size:24px}
-.team strong{font-size:10px}
 }
-</style>
-</head>
 
-<body>
-
-<header>
+/* تحسين الأيقونات */
+svg{stroke-linecap:round;stroke-linejoin:round}
+.goal-icons svg{filter:drop-shadow(0 2px 2px rgba(198,155,60,.15))}
+button:active{transform:scale(.97)}
+</style></head><body><header>
 <div class="brand">
 <div class="logo"><i data-lucide="shield"></i></div>
 <div>
@@ -609,9 +252,7 @@ footer strong{color:var(--dark)}
 </div>
 </div>
 <div class="header-badge">SEASON 2026</div>
-</header>
-
-<nav id="navigation">
+</header><nav id="navigation">
 <button class="active" data-page="home"><i data-lucide="house"></i> الرئيسية</button>
 <button data-page="matches"><i data-lucide="calendar-days"></i> المباريات</button>
 <button data-page="training"><i data-lucide="dumbbell"></i> التدريبات</button>
@@ -619,145 +260,121 @@ footer strong{color:var(--dark)}
 <button data-page="players"><i data-lucide="users"></i> اللاعبون</button>
 <button data-page="tournaments"><i data-lucide="trophy"></i> البطولات</button>
 <button data-page="about"><i data-lucide="info"></i> عن النادي</button>
-</nav>
-
-<main>
-
-<!-- الرئيسية -->
-<section class="page active" id="home">
-
-<div class="hero">
+</nav><main><!-- الرئيسية --><section class="page active" id="home"><div class="hero">
 <div class="hero-content">
 <div class="hero-label">CA SED RAHAL</div>
 <h2>معاً نحو<br>المجد والانتصار</h2>
 <p>OFFICIAL FOOTBALL CLUB</p>
 </div>
-</div>
-
-<div class="section-title">
+</div><div class="section-title">
 <h2>إحصائيات النادي</h2>
 <span>SEASON 2026</span>
-</div>
-
-<div class="stats-grid">
-<div class="stat-box">
-<i data-lucide="users"></i>
-<strong>16</strong>
-<small>لاعباً في القائمة</small>
-</div>
-<div class="stat-box">
-<i data-lucide="trophy"></i>
-<strong>8</strong>
-<small>أهداف آخر مباراة</small>
-</div>
-<div class="stat-box">
-<i data-lucide="shield-check"></i>
-<strong>2026</strong>
-<small>الموسم الرياضي</small>
-</div>
-<div class="stat-box">
-<i data-lucide="activity"></i>
-<strong>ACTIVE</strong>
-<small>حالة الفريق</small>
-</div>
-</div>
-
-<div class="section-title">
+</div><div class="stats-grid">
+<div class="stat-box"><i data-lucide="users"></i><strong>16</strong><small>لاعباً في القائمة</small></div>
+<div class="stat-box"><i data-lucide="trophy"></i><strong>8</strong><small>أهداف آخر مباراة</small></div>
+<div class="stat-box"><i data-lucide="shield-check"></i><strong>2026</strong><small>الموسم الرياضي</small></div>
+<div class="stat-box"><i data-lucide="activity"></i><strong>ACTIVE</strong><small>حالة الفريق</small></div>
+</div><div class="section-title">
 <h2>استكشف التطبيق</h2>
 <span>CLUB SECTIONS</span>
-</div>
-
-<div class="card">
-<div class="player-row">
-<div class="player-info">
-<div class="player-avatar"><i data-lucide="calendar-days"></i></div>
-<strong>المباريات والنتائج</strong>
-</div>
+</div><div class="card"><div class="player-row">
+<div class="player-info"><div class="player-avatar"><i data-lucide="calendar-days"></i></div><strong>المباريات والنتائج</strong></div>
 <button class="outline-button" onclick="goTo('matches')">فتح</button>
-</div>
-
-<div class="player-row">
-<div class="player-info">
-<div class="player-avatar"><i data-lucide="dumbbell"></i></div>
-<strong>برامج التدريبات</strong>
-</div>
+</div><div class="player-row">
+<div class="player-info"><div class="player-avatar"><i data-lucide="dumbbell"></i></div><strong>برامج التدريبات</strong></div>
 <button class="outline-button" onclick="goTo('training')">فتح</button>
-</div>
-
-<div class="player-row">
-<div class="player-info">
-<div class="player-avatar"><i data-lucide="clipboard-list"></i></div>
-<strong>التشكيلة الأساسية</strong>
-</div>
+</div><div class="player-row">
+<div class="player-info"><div class="player-avatar"><i data-lucide="clipboard-list"></i></div><strong>التشكيلة الأساسية</strong></div>
 <button class="outline-button" onclick="goTo('lineup')">فتح</button>
-</div>
-
-<div class="player-row">
-<div class="player-info">
-<div class="player-avatar"><i data-lucide="users"></i></div>
-<strong>قائمة اللاعبين</strong>
-</div>
+</div><div class="player-row">
+<div class="player-info"><div class="player-avatar"><i data-lucide="users"></i></div><strong>قائمة اللاعبين</strong></div>
 <button class="outline-button" onclick="goTo('players')">فتح</button>
-</div>
-
-<div class="player-row">
-<div class="player-info">
-<div class="player-avatar"><i data-lucide="trophy"></i></div>
-<strong>البطولات والإنجازات</strong>
-</div>
+</div><div class="player-row">
+<div class="player-info"><div class="player-avatar"><i data-lucide="trophy"></i></div><strong>البطولات والإنجازات</strong></div>
 <button class="outline-button" onclick="goTo('tournaments')">فتح</button>
-</div>
-</div>
-
-</section>
-
-<!-- المباريات -->
-<section class="page" id="matches">
-
-<div class="section-title">
+</div></div>
+</section><!-- المباريات --><section class="page" id="matches"><div class="section-title">
 <h2>المباريات القادمة</h2>
 <span>FIXTURES</span>
+</div><div class="card">
+<div class="empty-state">
+<i data-lucide="calendar-x"></i>
+<strong>لا توجد مباريات حالياً</strong>
+<p>ستظهر المباريات القادمة هنا عند إضافتها.</p>
 </div>
-
-<div class="match-card">
-<div class="match-status">المباراة القادمة</div>
-<div class="teams">
-<div class="team">
-<div class="team-logo"><i data-lucide="shield"></i></div>
-<strong>أشبال سدرحال</strong>
-</div>
-<div class="vs">VS</div>
-<div class="team">
-<div class="team-logo"><i data-lucide="circle"></i></div>
-<strong>الكتيبة الصفراء</strong>
-</div>
-</div>
-
-<div class="match-info">
-<span><i data-lucide="calendar"></i> 2 نوفمبر 2026</span>
-<span><i data-lucide="clock"></i> 16:45</span>
-<span><i data-lucide="map-pin"></i> ملعب الجردة</span>
-</div>
-</div>
-
-<div class="section-title">
+</div><div class="section-title">
 <h2>النتائج السابقة</h2>
 <span>RESULTS</span>
+</div><!-- مباراة الكتيبة الصفراء --><div class="result-card"><div class="result-head">
+<span>2 نوفمبر 2026</span>
+<span>مباراة منتهية</span>
+</div><div class="result-score">
+<span>أشبال سدرحال</span>
+<span class="score">8 - 2</span>
+<span>الكتيبة الصفراء</span>
+</div><div class="sub-heading">
+<i data-lucide="goal"></i>
+الهدافون
+</div><div class="goal-row">
+<span>غراب عبد العزيز</span>
+<span class="goal-icons">
+<i data-lucide="circle-dot"></i>
+<i data-lucide="circle-dot"></i>
+<i data-lucide="circle-dot"></i>
+</span>
+</div><div class="goal-row">
+<span>زريق مسعود</span>
+<span class="goal-icons">
+<i data-lucide="circle-dot"></i>
+<i data-lucide="circle-dot"></i>
+</span>
+</div><div class="goal-row">
+<span>غراب ابراهيم</span>
+<span class="goal-icons">
+<i data-lucide="circle-dot"></i>
+<i data-lucide="circle-dot"></i>
+</span>
+</div><div class="goal-row">
+<span>بن فتاشة سعيد</span>
+<span class="goal-icons">
+<i data-lucide="circle-dot"></i>
+</span>
+</div><div class="motm">
+<i data-lucide="award"></i>
+<div>
+<small>PLAYER OF THE MATCH</small>
+<strong>غراب عبد العزيز</strong>
 </div>
-
-<div class="result-card">
+</div><div class="sub-heading">
+<i data-lucide="clipboard-list"></i>
+التشكيلة
+</div><div class="pitch"><div class="pitch-line">
+<div class="pitch-player"><i data-lucide="user"></i>نعامة عبد الرزاق</div>
+</div><div class="pitch-line">
+<div class="pitch-player"><i data-lucide="user"></i>بن فتاشة سعيد</div>
+<div class="pitch-player"><i data-lucide="user"></i>غراب ابراهيم</div>
+<div class="pitch-player"><i data-lucide="user"></i>غراب عبد العزيز</div>
+</div><div class="pitch-line">
+<div class="pitch-player"><i data-lucide="shield"></i>دراوي عبدالرحمان</div>
+<div class="pitch-player"><i data-lucide="shield"></i>عمراوي أحمد</div>
+</div><div class="pitch-line">
+<div class="pitch-player"><i data-lucide="hand"></i>شداد عمر</div>
+</div></div><div class="lineup-group" style="margin-top:18px;margin-bottom:0">
+<div class="lineup-heading">دكة الاحتياط</div>
+<div class="lineup-list">
+<div class="lineup-player">زريق بكر</div>
+<div class="lineup-player">شعيب علي طه</div>
+<div class="lineup-player">زريق مسعود</div>
+</div>
+</div></div><!-- مباراة الجيل --><div class="result-card">
 <div class="result-head">
 <span>30 أكتوبر 2026</span>
 <span>مباراة منتهية</span>
-</div>
-
-<div class="result-score">
+</div><div class="result-score">
 <span>أشبال سدرحال</span>
 <span class="score">8 - 2</span>
 <span>الجيل</span>
-</div>
-
-<div class="scorers">
+</div><div class="scorers">
 <strong>أهداف أشبال سدرحال:</strong><br>
 عبد الرزاق ×2<br>
 دراوي عبدو ×2<br>
@@ -768,18 +385,8 @@ footer strong{color:var(--dark)}
 <strong>أهداف الجيل:</strong><br>
 علي ×1 — نوي ×1
 </div>
-</div>
-
-</section>
-
-<!-- التدريبات -->
-<section class="page" id="training">
-
-<div class="section-title">
-<h2>برنامج التدريبات</h2>
-<span>TRAINING</span>
-</div>
-
+</div></section><!-- التدريبات --><section class="page" id="training">
+<div class="section-title"><h2>برنامج التدريبات</h2><span>TRAINING</span></div>
 <div class="card">
 <div class="empty-state">
 <i data-lucide="dumbbell"></i>
@@ -787,178 +394,77 @@ footer strong{color:var(--dark)}
 <p>ستظهر مواعيد وبرامج التدريبات هنا عند إضافتها.</p>
 </div>
 </div>
-
-</section>
-
-<!-- التشكيلة -->
-<section class="page" id="lineup">
-
-<div class="section-title">
-<h2>تشكيلة المباراة القادمة</h2>
+</section><!-- التشكيلة --><section class="page" id="lineup"><div class="section-title">
+<h2>التشكيلة الأساسية</h2>
 <span>STARTING XI</span>
+</div><div class="card">
+<div class="empty-state">
+<i data-lucide="clipboard-list"></i>
+<strong>لم يتم تحديد التشكيلة بعد</strong>
+<p>ستظهر التشكيلة الأساسية هنا عند إضافتها.</p>
 </div>
-
-<div class="card">
-
-<div style="text-align:center;margin-bottom:15px">
-<strong>أشبال سدرحال</strong>
-<p style="font-size:10px;color:#888;margin-top:5px">ضد الكتيبة الصفراء</p>
-</div>
-
-<div class="pitch">
-
-<div class="pitch-line">
-<div class="pitch-player"><i data-lucide="user"></i>نعامة عبد الرزاق</div>
-</div>
-
-<div class="pitch-line">
-<div class="pitch-player"><i data-lucide="user"></i>بن فتاشة سعيد</div>
-<div class="pitch-player"><i data-lucide="user"></i>غراب ابراهيم</div>
-<div class="pitch-player"><i data-lucide="user"></i>غراب عبد العزيز</div>
-</div>
-
-<div class="pitch-line">
-<div class="pitch-player"><i data-lucide="shield"></i>دراوي عبدالرحمان</div>
-<div class="pitch-player"><i data-lucide="shield"></i>عمراوي أحمد</div>
-</div>
-
-<div class="pitch-line">
-<div class="pitch-player"><i data-lucide="hand"></i>شداد عمر</div>
-</div>
-
-</div>
-
-<div class="lineup-group" style="margin-top:18px">
-<div class="lineup-heading">دكة الاحتياط</div>
-<div class="lineup-list">
-<div class="lineup-player">زريق بكر</div>
-<div class="lineup-player">شعيب علي طه</div>
-<div class="lineup-player">زريق مسعود</div>
-</div>
-</div>
-
-</div>
-
-<div class="section-title">
-<h2>تشكيلة آخر مباراة</h2>
+</div><div class="section-title">
+<h2>تشكيلة مباراة الجيل</h2>
 <span>8 - 2</span>
-</div>
-
-<div class="card">
-
-<div class="lineup-group">
+</div><div class="card"><div class="lineup-group">
 <div class="lineup-heading">الهجوم</div>
 <div class="lineup-list">
 <div class="lineup-player">نعامة عبد الرزاق</div>
 </div>
-</div>
-
-<div class="lineup-group">
+</div><div class="lineup-group">
 <div class="lineup-heading">الوسط</div>
 <div class="lineup-list">
 <div class="lineup-player">بن فتاشة سعيد</div>
 <div class="lineup-player">غراب ابراهيم</div>
 <div class="lineup-player">غراب عبد العزيز</div>
 </div>
-</div>
-
-<div class="lineup-group">
+</div><div class="lineup-group">
 <div class="lineup-heading">الدفاع</div>
 <div class="lineup-list">
 <div class="lineup-player">دراوي عبدالرحمان</div>
 <div class="lineup-player">شعيب علي طه</div>
 </div>
-</div>
-
-<div class="lineup-group">
+</div><div class="lineup-group">
 <div class="lineup-heading">حراسة المرمى</div>
 <div class="lineup-list">
 <div class="lineup-player">شداد عمر</div>
 </div>
-</div>
-
-<div class="lineup-group">
+</div><div class="lineup-group">
 <div class="lineup-heading">الاحتياط</div>
 <div class="lineup-list">
 <div class="lineup-player">زريق مسعود</div>
 <div class="lineup-player">عمراوي أحمد</div>
 <div class="lineup-player">زريق بكر</div>
 </div>
-</div>
-
-</div>
-</section>
-
-<!-- اللاعبون -->
-<section class="page" id="players">
-
-<div class="section-title">
+</div></div>
+</section><!-- اللاعبون --><section class="page" id="players"><div class="section-title">
 <h2>قائمة اللاعبين</h2>
 <span>TEAM ROSTER</span>
-</div>
-
-<div class="card">
-
-<div class="category">حراس المرمى</div>
-<div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="hand"></i></div><strong>شداد عمر</strong></div><span class="rating">GK</span></div>
-<div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="hand"></i></div><strong>غراب ياسين</strong></div><span class="rating">GK</span></div>
-
-<div class="category">الدفاع</div>
-<div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="shield"></i></div><strong>دراوي عبدالرحمان</strong></div><span class="rating">DEF</span></div>
+</div><div class="card"><div class="category">حراس المرمى</div><div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="hand"></i></div><strong>شداد عمر</strong></div><span class="rating">GK</span></div>
+<div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="hand"></i></div><strong>غراب ياسين</strong></div><span class="rating">GK</span></div><div class="category">الدفاع</div><div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="shield"></i></div><strong>دراوي عبدالرحمان</strong></div><span class="rating">DEF</span></div>
 <div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="shield"></i></div><strong>حمرورش العيد</strong></div><span class="rating">DEF</span></div>
 <div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="shield"></i></div><strong>حمرورش ابراهيم</strong></div><span class="rating">DEF</span></div>
 <div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="shield"></i></div><strong>زريق مسعود</strong></div><span class="rating">DEF</span></div>
 <div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="shield"></i></div><strong>زروقي مصعب</strong></div><span class="rating">DEF</span></div>
-<div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="shield"></i></div><strong>زريق بكر</strong></div><span class="rating">DEF</span></div>
-
-<div class="category">الوسط</div>
-<div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="user"></i></div><strong>عمراوي أحمد</strong></div><span class="rating">MID</span></div>
+<div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="shield"></i></div><strong>زريق بكر</strong></div><span class="rating">DEF</span></div><div class="category">الوسط</div><div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="user"></i></div><strong>عمراوي أحمد</strong></div><span class="rating">MID</span></div>
 <div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="user"></i></div><strong>نعامة عبد الرزاق</strong></div><span class="rating">MID</span></div>
 <div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="user"></i></div><strong>قناي فوزي</strong></div><span class="rating">MID</span></div>
 <div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="user"></i></div><strong>نعامة محمد الامين</strong></div><span class="rating">MID</span></div>
-<div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="user"></i></div><strong>بن فتاشة سعيد</strong></div><span class="rating">MID</span></div>
-
-<div class="category">الهجوم</div>
-<div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="zap"></i></div><strong>شعيب علي طه</strong></div><span class="rating">ATT</span></div>
+<div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="user"></i></div><strong>بن فتاشة سعيد</strong></div><span class="rating">MID</span></div><div class="category">الهجوم</div><div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="zap"></i></div><strong>شعيب علي طه</strong></div><span class="rating">ATT</span></div>
 <div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="zap"></i></div><strong>غراب ابراهيم</strong></div><span class="rating">ATT</span></div>
-<div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="zap"></i></div><strong>غراب عبد العزيز بوتفليقة</strong></div><span class="rating">ATT</span></div>
-
-</div>
-
-<div class="section-title">
-<h2>الطاقم الفني</h2>
-</div>
-
-<div class="card">
+<div class="player-row"><div class="player-info"><div class="player-avatar"><i data-lucide="zap"></i></div><strong>غراب عبد العزيز بوتفليقة</strong></div><span class="rating">ATT</span></div></div><div class="section-title"><h2>الطاقم الفني</h2></div><div class="card">
 <div class="player-row">
 <div class="player-info">
 <div class="player-avatar"><i data-lucide="briefcase-business"></i></div>
-<div>
-<strong>عمراوي محمد الآمين</strong>
-<small>مدرب الفريق</small>
-</div>
+<div><strong>عمراوي محمد الآمين</strong><small>مدرب الفريق</small></div>
 </div>
 <span class="rating">COACH</span>
 </div>
-</div>
-
-<div class="section-title">
+</div><div class="section-title">
 <h2>تقييمات اللاعبين</h2>
 <span>PLAYER RATINGS</span>
-</div>
-
-<div class="card" id="allRatings"></div>
-
-</section>
-
-<!-- البطولات -->
-<section class="page" id="tournaments">
-
-<div class="section-title">
-<h2>البطولات والإنجازات</h2>
-<span>HONOURS</span>
-</div>
-
+</div><div class="card" id="allRatings"></div></section><!-- البطولات --><section class="page" id="tournaments">
+<div class="section-title"><h2>البطولات والإنجازات</h2><span>HONOURS</span></div>
 <div class="card">
 <div class="empty-state">
 <i data-lucide="trophy"></i>
@@ -966,81 +472,34 @@ footer strong{color:var(--dark)}
 <p>ستظهر هنا جميع بطولات وإنجازات النادي.</p>
 </div>
 </div>
-
-</section>
-
-<!-- عن النادي -->
-<section class="page" id="about">
-
-<div class="section-title">
-<h2>عن النادي</h2>
-<span>ABOUT US</span>
-</div>
-
-<div class="card">
-
-<div class="about-image"></div>
-
-<h3 style="font-size:18px;margin-bottom:10px">
-النادي الرياضي سدرحال
-</h3>
-
-<p class="about-text">
+</section><!-- عن النادي --><section class="page" id="about"><div class="section-title"><h2>عن النادي</h2><span>ABOUT US</span></div><div class="card">
+<div class="about-image"></div><h3 style="font-size:18px;margin-bottom:10px">النادي الرياضي سدرحال</h3><p class="about-text">
 مرحباً بكم في التطبيق الرسمي للنادي الرياضي سدرحال.
-
 هنا تجدون المعلومات الرسمية للفريق، وقائمة اللاعبين،
 والتشكيلات، والنتائج، ومواعيد المباريات.
-
-هدفنا هو متابعة مسيرة الفريق وتوثيق إنجازاته
-ومشاركة تفاصيله مع جميع محبيه.
-
 <br><br>
-
-<strong style="color:var(--dark)">
-CA SED RAHAL — معاً نحو الأفضل.
-</strong>
+هدفنا هو متابعة مسيرة الفريق وتوثيق إنجازاته ومشاركة تفاصيله مع جميع محبيه.
+<br><br>
+<strong style="color:var(--dark)">CA SED RAHAL — معاً نحو الأفضل.</strong>
 </p>
-
-</div>
-
-<div class="card">
+</div><div class="card">
 <div class="card-title"><i data-lucide="shield"></i> هوية النادي</div>
-
 <div class="player-row"><strong>اسم النادي</strong><span>CA SED RAHAL</span></div>
 <div class="player-row"><strong>الفئة</strong><span>الأشبال</span></div>
 <div class="player-row"><strong>الموسم</strong><span>2026</span></div>
 <div class="player-row"><strong>الإصدار</strong><span>White & Gold</span></div>
-
-</div>
-
-</section>
-
-<footer>
+</div></section><footer>
 <strong>CA SED RAHAL</strong><br>
 OFFICIAL CLUB APPLICATION © 2026
-</footer>
+</footer></main><script>
 
-</main>
-
-<script>
-
-const pages=[
-"home",
-"matches",
-"training",
-"lineup",
-"players",
-"tournaments",
-"about"
-];
+const pages=["home","matches","training","lineup","players","tournaments","about"];
 
 function showPage(page,updateHistory=true){
 
-if(!pages.includes(page)) page="home";
+if(!pages.includes(page))page="home";
 
-document.querySelectorAll(".page").forEach(p=>{
-p.classList.remove("active");
-});
+document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
 
 document.getElementById(page).classList.add("active");
 
@@ -1065,20 +524,16 @@ inline:"center"
 }
 }
 
-function goTo(page){
-showPage(page);
-}
+function goTo(page){showPage(page)}
 
 document.querySelectorAll("nav button").forEach(btn=>{
-btn.addEventListener("click",()=>{
-goTo(btn.dataset.page);
-});
+btn.addEventListener("click",()=>goTo(btn.dataset.page));
 });
 
 window.addEventListener("popstate",event=>{
 let page="home";
 
-if(event.state && event.state.page){
+if(event.state&&event.state.page){
 page=event.state.page;
 }else if(location.hash){
 page=location.hash.substring(1);
@@ -1100,13 +555,10 @@ const ratings=[
 ["شعيب علي طه","8.9"]
 ];
 
-document.getElementById("allRatings").innerHTML=
-ratings.map((p,i)=>`
+document.getElementById("allRatings").innerHTML=ratings.map((p,i)=>`
 <div class="player-row">
 <div class="player-info">
-<div class="player-avatar">
-<i data-lucide="user"></i>
-</div>
+<div class="player-avatar"><i data-lucide="user"></i></div>
 <div>
 <strong>${p[0]}</strong>
 <small>المركز ${i+1}</small>
@@ -1132,13 +584,9 @@ showPage(initial,false);
 refreshIcons();
 });
 
-/* دعم الرجوع داخل التطبيق */
-
 if(!location.hash){
 history.replaceState({page:"home"},"","#home");
 }
 
-</script>
-
-</body>
+</script></body>
 </html>
